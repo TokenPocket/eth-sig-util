@@ -158,7 +158,7 @@ class SignatureUtil {
       final bytes = encodeBigInt(s);
 
       if (qLength < bytes.length) {
-        return bytes.sublist(0, bytes.length - qLength);
+        return bytes.sublist(bytes.length - qLength);
       } else if (qLength > bytes.length) {
         final tmp = List<int>.filled(qLength, 0);
 
