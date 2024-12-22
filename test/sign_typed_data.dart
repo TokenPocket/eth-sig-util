@@ -1,8 +1,5 @@
-import 'dart:convert';
-import 'dart:io';
 
 import 'package:eth_sig_util/eth_sig_util.dart';
-import 'package:eth_sig_util/model/typed_data.dart';
 import 'package:test/test.dart';
 
 void main() {

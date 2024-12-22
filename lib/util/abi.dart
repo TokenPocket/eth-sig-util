@@ -50,7 +50,7 @@ class AbiUtil {
   }
 
   static Uint8List encodeSingle(String type, dynamic arg) {
-    var size, i;
+    var size;
 
     if (type == 'address') {
       return encodeSingle('uint160', parseNumber(arg));
