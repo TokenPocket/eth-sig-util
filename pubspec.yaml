@@ -1,9 +1,6 @@
 name: eth_sig_util
-description: Ethereum signature utility porting from JS
-version: 0.0.9
 publish_to: none
-homepage: https://wakumo.vn
-repository: https://github.com/wakumo/eth-sig-util
+version: 0.0.9
 
 environment:
   sdk: ">=2.12.0 <3.0.0"
