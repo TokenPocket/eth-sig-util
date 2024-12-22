@@ -160,14 +160,7 @@ class SignatureUtil {
       if (qLength < bytes.length) {
         return bytes.sublist(bytes.length - qLength);
       } else if (qLength > bytes.length) {
-        final tmp = List<int>.filled(qLength, 0);
-
-        final offset = qLength - bytes.length;
-        for (var i = 0; i < bytes.length; i++) {
-          tmp[i + offset] = bytes[i];
-        }
-
-        return tmp;
+        return List<int>.filled(qLength - bytes.length, 0) + bytes;
       }
 
       return bytes;
